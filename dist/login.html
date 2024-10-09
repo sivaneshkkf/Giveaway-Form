@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Giveaway-Form/style.css">
+    <title>Login</title>
+  </head>
+ 
+  <body class="bg-gray-100 text-sm w-screen h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-800 relative w-screen">
+      <div class="flex gap-4 pt-10 pb-16 items-center justify-center">
+        <span class="text-sm font-normal text-white mr-5"><a href="/index.html"> Home</a></span>
+       <p class="text-xl font-semibold text-center text-orange-600 uppercase select-none">Dash Board</p>
+    </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="bg-white p-5 rounded shadow-md relative font-medium max-w-xl h-fit mx-auto -mt-10">
+      <form name="loginForm" class="space-y-4">
+        <div>
+          <label for="email" class="block mb-1 text-gray-800">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Email Address" class="input w-full px-3 py-2 border rounded" required>
+        </div>
+
+        <div>
+          <label for="pw" class="block mb-1 text-gray-800">Password</label>
+          <input type="password" id="pw" name="pw" placeholder="Password" class="input w-full px-3 py-2 border rounded" required>
+        </div>
+        <!-- Submit Button Section -->
+        <div class="text-center">
+          <button type="submit" class="bg-orange-500 text-white rounded px-3 py-1 text-xs flex justify-center items-center gap-1" name="btn">
+            <svg class="animate-spin hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3C16.97 3 21 7.03 21 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 3C16.97 3 21 7.03 21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3Z" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Login</p>
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <div class="ml-5 absolute bottom-5 left-0 text-sm text-gray-500">
+      <p>Note:</p>
+      <p>You can login using this Mail Id and Password</p>
+      <p>Nail Id: sivanesh@gmail.com</p>
+      <p>PW: 123123123</p>
+    </div>
+
+    <!-- Firebase and Script Imports -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+    <script src="public/js/firbase.js"></script>
+    <script type="module" src="public/js/login.js"></script>
+  </body>
+  
+</html>
