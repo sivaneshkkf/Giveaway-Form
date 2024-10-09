@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const userObj= JSON.parse(localStorage.getItem("userID"));
    
     if(!userObj){
-        window.location.replace("/Giveaway-Form-Firebase/login.html")
+        window.location.replace("/Giveaway-Form/login.html")
     }else{
         refreshUI(index)
     }
@@ -14,7 +14,7 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 logoutBtn.addEventListener("click", (e) => {
     localStorage.removeItem("userID")
-    window.location.replace("login.html")
+    window.location.replace("/Giveaway-Form/login.html")
 })
 
 

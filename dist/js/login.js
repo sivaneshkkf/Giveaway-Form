@@ -33,7 +33,7 @@ const handleloginFrom = (e) => {
        
         storeLocalStorage(user)
 
-        window.location.replace("/Giveaway-Form-Firebase/dashboard.html")
+        window.location.replace("/Giveaway-Form/dashboard.html")
         
     }).catch(({errorCode}) => {
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const userObj= JSON.parse(localStorage.getItem("userID"));
     
     if(userObj){
-        window.location.replace("dashboard.html")
+        window.location.replace("/Giveaway-Form/dashboard.html")
     }else{
         return
     }
