@@ -33,7 +33,7 @@ const handleloginFrom = (e) => {
        
         storeLocalStorage(user)
 
-        window.location.replace("dashboard.html")
+        window.location.replace("/Giveaway-Form-Firebase/dashboard.html")
         
     }).catch(({errorCode}) => {
 
