@@ -2,8 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./login.html",
-    "./dashboard.html",
+    "./public/login.html",
+    "./bublic/dashboard.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
