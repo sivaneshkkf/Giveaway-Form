@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const userObj= JSON.parse(localStorage.getItem("userID"));
    
     if(!userObj){
-        window.location.replace("login.html")
+        window.location.replace("/Giveaway-Form-Firebase/login.html")
     }else{
         refreshUI(index)
     }
