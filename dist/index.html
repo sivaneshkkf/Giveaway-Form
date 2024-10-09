@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/Giveaway-Form-Firebase/assets/index-Dl6kPiQL.js"></script>
+    <link rel="stylesheet" crossorigin href="/Giveaway-Form-Firebase/assets/index-ppyulMEA.css">
+  </head>
+  <body>
+    <body class="bg-gray-100 text-sm">
+
+      <header class="bg-gradient-to-r from-blue-900 to-blue-800 relative">
+        <h4 class="text-xl font-semibold text-center text-orange-600 pt-10 pb-16 uppercase flex items-center justify-center">
+          <a href="/index.html"> Giveaway</a>
+  
+          <div class="absolute right-0 mr-5 flex gap-1">
+            <a href="dashboard.html" id="dashbordBtn" class="text-white text-sm text-end ml-auto">Dash Board</a>
+          </div>
+         
+        </h4>
+        
+      </header>
+  
+      <main class="lg:grid lg:grid-cols-3 gap-5 lg:mx-16 mx-2 absolute right-0 left-0 top-24 font-medium">
+  
+        <div id="mainCon" class="bg-white rounded-lg p-5 col-span-2">
+          <form name="givewayForm">
+            <div class="md:grid md:grid-cols-2 md:gap-5 block">
+              <div>
+                <label for="fullName" class="block mb-1 text-gray-800">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" class="input" required>
+              </div>
+    
+              <div>
+                <label for="gender" class="block mb-2">Gender</label>
+                <div class="flex gap-2 items-center">
+                  <label class="text-xs mr-2 flex items-center"><input class="text-xs mr-1" type="radio" name="gender" required>Male</label>
+                  <label class="text-xs mr-2 flex items-center"><input class="text-xs mr-1" type="radio" name="gender" required>Female</label>
+                  <label class="text-xs mr-2 flex items-center"><input class="text-xs mr-1" type="radio" name="gender" required>Others</label>
+                </div>
+              </div>
+  
+              <div>
+                <label for="email" class="block mb-1 text-gray-800">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" class="input" required>
+              </div>
+  
+              <div>
+                <label for="dob" class="block mb-1 text-gray-800">DOB</label>
+                <input type="date" id="dob" name="dob" placeholder="DOB" class="input" required>
+              </div>
+  
+              <div>
+                <label for="skill" class="block mb-1 text-gray-800">What skill do you know already?</label>
+                <input type="text" id="skill" name="skill" placeholder="Skills" class="input" required>
+              </div>
+  
+              <div>
+                <label for="experience" class="block mb-1 text-gray-800">Experience</label>
+                <select name="experience" id="experience" class="input" required>
+                  <option value="">Select Experience</option>
+                  <option value="0.6">Less than 6 month</option>
+                  <option value="1">One year</option>
+                  <option value="2">Two year</option>
+                  <option value="5">Five year</option>
+                </select>
+              </div>
+  
+              <div>
+                <label for="career" class="block mb-1 text-gray-800">Did this institute change your career?</label>
+                <textarea type="text" id="career" name="career" placeholder="Explain briefly in 250 words." class="input"></textarea>
+              </div>
+  
+              <div>
+                <label for="course" class="block mb-1 text-gray-800">Have you attened any course completions?</label>
+                <textarea type="text" id="course" name="course" placeholder="If any, explain briefly" class="input"></textarea>
+              </div>
+  
+              <div>
+                <label for="phnumber" class="block mb-1 text-gray-800">Phone Number</label>
+                <input type="number" id="phnumber" name="phnumber" placeholder="000000000" class="input" required>
+              </div>
+  
+              <div>
+                <label for="linkedin" class="block mb-1 text-gray-800">Linked in Profile</label>
+                <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn URL" class="input" required>
+              </div>
+  
+              <div class="col-span-2">
+                <label for="reason" class="block mb-1 text-gray-800">why you want to join this internship</label>
+                <textarea type="text" id="reason" rows="10" name="reason" placeholder="Explain briefly in 250 words." class="input"></textarea>
+              </div>
+  
+              <div class="col-span-2">
+                <label for="terms" class="text-xs flex items-center gap-2 select-none">
+                  <input type="checkbox" name="terms" id="terms" required>
+                  I accept the<a href="#termsContent" class="text-orange-600">terms and conditions</a>mentioned below</label>
+                  <label for="accept" class="text-xs flex items-center gap-2 mt-5 select-none">
+                    <input type="checkbox" name="accept" id="accept" required>
+                    I accept I need the following requirements to proceed this internship</label>
+              </div>
+              <div class="col-span-2 text-center">
+                <button class="bg-orange-600 text-white rounded px-3 py-1 text-xs flex gap-1 items-center mx-auto" name="btn">
+                  <svg class="animate-spin hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3C16.97 3 21 7.03 21 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 3C16.97 3 21 7.03 21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3Z" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <p>Apply</p>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <div class="bg-white rounded-lg lg:mt-0 mt-5 p-10 max-h-fit" id="termsContent">
+          <h3 class="text-center font-semibold">Terms and conditions</h3>
+          <ul id="conList" class="text-gray-600 text-xs tracking-wide leading-6 font-normal list-disc mt-5">
+  
+          </ul>
+        </div>
+      </main>
+  
+      <section class="bg-white max-w-xl p-10 mx-auto rounded mt-10 hidden" id="formSubmitted">
+          <div>
+            <h1 class="text-xl font-semibold text-center">Thank you. We recieved your application.</h1>
+            <p class="text-gray-600 mt-5 text-center">Your application has been successfully registered.</p>
+        </div>
+      </section>
+  
+      
+      
+      <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+      <script src="js/firbase.js"></script>
+  
+    </body>
+  </body>
+</html>
